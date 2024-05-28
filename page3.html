@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>宜昌皓胶新材料科技有限公司</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .header, .content {
+            background-color: #e60000;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .company-name {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .section {
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .section img {
+            width: 50%;
+            height: auto;
+        }
+        .section p {
+            text-align: left;
+            margin: 10px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>宜昌皓胶新材料科技有限公司</h1>
+			<h1>YICHANG HAOJIAO NEW MATERIAL TECHNOLOGY CO. LTD</h1>
+        </div>
+        <div class="content">
+            <div class="company-name">
+                <p>万胶之王 · 品质为王 </p>
+				<p>THE KING OF ALL GUMS • QUALITY ABOVE ALL</p>
+            </div>
+			
+        </div>
+        <div class="section">
+            <p>宜昌皓胶新材料科技有限公司自创建以来，一直专注于单组份硅酮胶、双组份硅酮胶、聚氨酯发泡胶、硅烷胶、美缝剂、环保高弹胶的研发、生产和销售，工厂占地面积50000余平方米。全国创立了5大运营团队，200余个县级运营商，全年产销额3亿元。</p>
+            <p>Since its establishment, Yichang Haojiao New Materials Technology Co., Ltd. has been dedicated to the research and development, production, and sales of single-component silicone sealants, two-component silicone sealants, polyurethane foam sealants, silane-modified sealants, tile grout, and environmentally friendly high-elastic sealants. The factory covers an area of over 50,000 square meters. The company has established five major operational teams nationwide and over 200 county-level operators, with an annual production and sales volume of 300 million yuan. </p>
+			<p>宜昌皓胶现有先进的硅酮胶自动生产线10条，发泡胶生产线8条，美缝剂自动生产线4条，环保高弹胶生产线多条，所有产品均采用高品质、高标准的原材料，对生产的每个流程环节进行科学的控制和有效的监督确保生产的每一款产品都符合行业标准。</p>
+            <p>Yichang Haojiao currently operates 10 advanced automated production lines for silicone sealants, 8 production lines for foam sealants, 4 automated production lines for tile grout, and multiple production lines for environmentally friendly high-elastic sealants. All products are made using high-quality, high-standard raw materials. Every production process is scientifically controlled and effectively supervised to ensure that each product meets industry standards. </p>
+			<img src="factory overview.jpg" alt="公司设施">
+        </div>
+    </div>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a, .nav-bar select {
+            margin: 0 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav-bar a:hover, .nav-bar select:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+    <script>
+        function goToPage() {
+            var page = document.getElementById("pageSelect").value;
+            window.location.href = page;
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function setupNavigation(currentPage, totalPages) {
+            document.getElementById('prevPage').onclick = function() {
+                if (currentPage > 1) navigateTo('page' + (currentPage - 1) + '.html');
+            };
+
+            document.getElementById('nextPage').onclick = function() {
+                if (currentPage < totalPages) navigateTo('page' + (currentPage + 1) + '.html');
+            };
+
+            document.getElementById('firstPage').onclick = function() {
+                navigateTo('page1.html');
+            };
+
+            document.getElementById('lastPage').onclick = function() {
+                navigateTo('page' + totalPages + '.html');
+            };
+        }
+    </script>
+</head>
+<body onload="setupNavigation(3, 16)"><!-- Adjust the current page number and total pages accordingly -->
+    <div class="container">
+        <div class="nav-bar">
+            <a id="firstPage" href="javascript:void(0);">首页</a>
+            <a id="prevPage" href="javascript:void(0);">上页</a>
+            <select id="pageSelect" onchange="goToPage()">
+			<option value="page3.html">第 3 页</option>
+                <option value="page1.html">第 1 页</option>
+                <option value="page2.html">第 2 页</option>
+                
+                <option value="page4.html">第 4 页</option>
+                <option value="page5.html">第 5 页</option>
+                <option value="page6.html">第 6 页</option>
+                <option value="page7.html">第 7 页</option>
+                <option value="page8.html">第 8 页</option>
+                <option value="page9.html">第 9 页</option>
+                <option value="page10.html">第 10 页</option>
+                <option value="page11.html">第 11 页</option>
+                <option value="page12.html">第 12 页</option>
+                <option value="page13.html">第 13 页</option>
+                <option value="page14.html">第 14 页</option>
+                <option value="page15.html">第 15 页</option>
+                <option value="page16.html">第 16 页</option>
+            </select>
+            <a id="nextPage" href="javascript:void(0);">下页</a>
+            <a id="lastPage" href="javascript:void(0);">尾页</a>
+        </div>
+        <!-- Page content goes here -->
+    </div>
+</body>
+</html>

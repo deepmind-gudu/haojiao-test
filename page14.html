@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>产品展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #d32f2f;
+        }
+        .header h2 {
+            margin: 0;
+            color: #757575;
+            font-weight: normal;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .product-details {
+            width: calc(100% - 120px);
+        }
+        .product-details h3 {
+            color: #d32f2f;
+            margin-top: 0;
+        }
+        .product-details h4 {
+            margin-bottom: 5px;
+        }
+        .product-details ul {
+            padding-left: 20px;
+        }
+        .product-details ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>产品展示</h1>
+        <h2>PRODUCT DISPLAY</h2>
+    </div>
+
+    <div class="product">
+        <img src="万胶之王-美缝剂.jpg" alt="美缝剂">
+        <div class="product-details">
+            <h3>万胶之王-美缝剂 410ml</h3>
+			<h3>THE KING OF ALL GUMS -  Grout Sealant 410ml</h3>
+            <h4>产品特性</h4>
+			<h4>Product Features</h4>
+            <ul>
+                <li>本产品可与金属、玻璃、水泥、瓷砖、石材、木地板等完全粘接成一整体，永久不开裂、不漏水、不褪色、可完全代替玻璃胶、瓷胶；</li>
+                <li>Complete adhesion: This product can fully bond with metals, glass, cement, tiles, stone, wooden floors, etc., forming a seamless and permanent bond. It does not crack, leak water, or fade, and can completely replace glass glue and porcelain adhesive. </li>
+				<li>胶体固化后坚硬如瓷，结构强固，具有耐磨、耐腐蚀、耐高温、抗酸碱、抗低温、不收缩、不老化、不变质、无毒无味、防水、防漏、防霉多种特性；</li>
+                <li> Hard as porcelain after curing: The gel becomes as hard as porcelain after curing, with a strong structure. It is wear-resistant, corrosion-resistant, heat-resistant, acid and alkali resistant, cold-resistant, non-shrinking, non-aging, non-degrading, non-toxic, odorless, waterproof, leak-proof, and mold-proof.</li>
+				<li>用自动搅拌混合胶嘴，操作简单方便，和普通硅胶玻璃胶一样挤出，自动搅拌均匀，无需手动搅拌；</li>
+                <li> Easy to use with automatic mixing nozzle: Simple and convenient operation with automatic mixing nozzle. Similar to ordinary silicone and glass glues, it can be extruded evenly without manual mixing.</li>
+				<li>综合了塑料材、填缝剂、刚性修复复合材料的优点，因此具有超强防水性、耐腐蚀性、耐候性、极小的固化收缩性四大功能。</li>
+				<li> Combines the advantages of plastic materials, sealants, and rigid repair composite materials: Therefore, it has four major functions: super waterproofing, corrosion resistance, weather resistance, and minimal curing shrinkage.</li>
+			</ul>
+            <h4>主要用途</h4>
+			<h4>Main Applications</h4>
+            <ul>
+                <li>可用于装修工程、防水工程、居家装修、物业维修翻新，也可用于屋顶、坐便器的粘接，具有良好的防霉防水效果，是包缝美化的万能性产品。</li>
+				<li> Suitable for decoration projects, waterproofing projects, home decoration, property maintenance and renovation: Can also be used for bonding roofs, toilets, providing excellent mold and water resistance. It is a versatile product for sealing and beautifying seams.</li>
+			</ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>万胶之王：品质为王</h2>
+		<h2>THE KING OF ALL GUMS • QUALITY ABOVE ALL</h2>
+    </div>
+</div>
+
+</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a, .nav-bar select {
+            margin: 0 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav-bar a:hover, .nav-bar select:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+    <script>
+        function goToPage() {
+            var page = document.getElementById("pageSelect").value;
+            window.location.href = page;
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function setupNavigation(currentPage, totalPages) {
+            document.getElementById('prevPage').onclick = function() {
+                if (currentPage > 1) navigateTo('page' + (currentPage - 1) + '.html');
+            };
+
+            document.getElementById('nextPage').onclick = function() {
+                if (currentPage < totalPages) navigateTo('page' + (currentPage + 1) + '.html');
+            };
+
+            document.getElementById('firstPage').onclick = function() {
+                navigateTo('page1.html');
+            };
+
+            document.getElementById('lastPage').onclick = function() {
+                navigateTo('page' + totalPages + '.html');
+            };
+        }
+    </script>
+</head>
+<body onload="setupNavigation(14, 16)"><!-- Adjust the current page number and total pages accordingly -->
+    <div class="container">
+        <div class="nav-bar">
+            <a id="firstPage" href="javascript:void(0);">首页</a>
+            <a id="prevPage" href="javascript:void(0);">上页</a>
+            <select id="pageSelect" onchange="goToPage()">
+			<option value="page14.html">第 14 页</option>
+                <option value="page1.html">第 1 页</option>
+                <option value="page2.html">第 2 页</option>
+                <option value="page3.html">第 3 页</option>
+                <option value="page4.html">第 4 页</option>
+                <option value="page5.html">第 5 页</option>
+                <option value="page6.html">第 6 页</option>
+                <option value="page7.html">第 7 页</option>
+                <option value="page8.html">第 8 页</option>
+                <option value="page9.html">第 9 页</option>
+                <option value="page10.html">第 10 页</option>
+                <option value="page11.html">第 11 页</option>
+                <option value="page12.html">第 12 页</option>
+                <option value="page13.html">第 13 页</option>
+                
+                <option value="page15.html">第 15 页</option>
+                <option value="page16.html">第 16 页</option>
+            </select>
+            <a id="nextPage" href="javascript:void(0);">下页</a>
+            <a id="lastPage" href="javascript:void(0);">尾页</a>
+        </div>
+        <!-- Page content goes here -->
+    </div>
+</body>
+</html>

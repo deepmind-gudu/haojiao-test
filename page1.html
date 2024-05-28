@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('your-image-url.png');
+            height: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            background-color: rgba(255, 0, 0, 0.8); /* Red background with opacity */
+            padding: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <p>万胶之王 • 品质为王</p>
+			<p>THE KING OF ALL GUMS • QUALITY ABOVE ALL</p>
+            <p>宜昌皓胶新材料科技有限公司</p>
+			<p>YICHANG HAOJIAO NEW MATERIAL TECHNOLOGY CO. LTD</p>
+			
+        </div>
+    </div>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a, .nav-bar select {
+            margin: 0 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav-bar a:hover, .nav-bar select:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+    <script>
+        function goToPage() {
+            var page = document.getElementById("pageSelect").value;
+            window.location.href = page;
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function setupNavigation(currentPage, totalPages) {
+            document.getElementById('prevPage').onclick = function() {
+                if (currentPage > 1) navigateTo('page' + (currentPage - 1) + '.html');
+            };
+
+            document.getElementById('nextPage').onclick = function() {
+                if (currentPage < totalPages) navigateTo('page' + (currentPage + 1) + '.html');
+            };
+
+            document.getElementById('firstPage').onclick = function() {
+                navigateTo('page1.html');
+            };
+
+            document.getElementById('lastPage').onclick = function() {
+                navigateTo('page' + totalPages + '.html');
+            };
+        }
+    </script>
+</head>
+<body onload="setupNavigation(1, 16)"><!-- Adjust the current page number and total pages accordingly -->
+    <div class="container">
+        <div class="nav-bar">
+            <a id="firstPage" href="javascript:void(0);">首页</a>
+            <a id="prevPage" href="javascript:void(0);">上页</a>
+            <select id="pageSelect" onchange="goToPage()">
+                <option value="page1.html">第 1 页</option>
+                <option value="page2.html">第 2 页</option>
+                <option value="page3.html">第 3 页</option>
+                <option value="page4.html">第 4 页</option>
+                <option value="page5.html">第 5 页</option>
+                <option value="page6.html">第 6 页</option>
+                <option value="page7.html">第 7 页</option>
+                <option value="page8.html">第 8 页</option>
+                <option value="page9.html">第 9 页</option>
+                <option value="page10.html">第 10 页</option>
+                <option value="page11.html">第 11 页</option>
+                <option value="page12.html">第 12 页</option>
+                <option value="page13.html">第 13 页</option>
+                <option value="page14.html">第 14 页</option>
+                <option value="page15.html">第 15 页</option>
+                <option value="page16.html">第 16 页</option>
+            </select>
+            <a id="nextPage" href="javascript:void(0);">下页</a>
+            <a id="lastPage" href="javascript:void(0);">尾页</a>
+        </div>
+        <!-- Page content goes here -->
+    </div>
+</body>
+</html>

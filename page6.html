@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>企业荣誉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #d32f2f;
+        }
+        .header h2 {
+            margin: 0;
+            color: #757575;
+            font-weight: normal;
+        }
+        .content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content h3 {
+            margin: 0;
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content p {
+            margin: 10px 0 0 0;
+            color: #555;
+            font-size: 16px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .image-item {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>企业荣誉</h1>
+        <h2>ENTERPRISE HONOR</h2>
+    </div>
+
+    <div class="content">
+        <h3>品质至上——各项检测获得权威机构认证 宜昌皓胶在荣誉中砥砺前行</h3>
+		<h3>Quality Above All - Various Tests Certified by Authoritative Institutions. Yichang Haojiao forges ahead with honors.</h3>
+
+
+    </div>
+
+    <div class="image-grid">
+        <div class="image-item">
+            <img src="奖状1.jpg" alt="Certificate 1">
+ 
+        </div>
+        <div class="image-item">
+            <img src="奖状2.png" alt="Certificate 2">
+
+        </div>
+        <div class="image-item">
+            <img src="奖状3.png" alt="Certificate 3">
+
+        </div>
+        <div class="image-item">
+            <img src="奖状4.png" alt="Certificate 4">
+
+        </div>
+        <div class="image-item">
+            <img src="奖状5.png" alt="Certificate 5">
+
+        </div>
+        <div class="image-item">
+            <img src="奖状6.png" alt="Certificate 6">
+
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>万胶之王：品质为王</h2>
+		<h2>THE KING OF ALL GUMS • QUALITY ABOVE ALL</h2>
+    </div>
+</div>
+
+</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a, .nav-bar select {
+            margin: 0 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 5px;
+        }
+        .nav-bar a:hover, .nav-bar select:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+    <script>
+        function goToPage() {
+            var page = document.getElementById("pageSelect").value;
+            window.location.href = page;
+        }
+
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function setupNavigation(currentPage, totalPages) {
+            document.getElementById('prevPage').onclick = function() {
+                if (currentPage > 1) navigateTo('page' + (currentPage - 1) + '.html');
+            };
+
+            document.getElementById('nextPage').onclick = function() {
+                if (currentPage < totalPages) navigateTo('page' + (currentPage + 1) + '.html');
+            };
+
+            document.getElementById('firstPage').onclick = function() {
+                navigateTo('page1.html');
+            };
+
+            document.getElementById('lastPage').onclick = function() {
+                navigateTo('page' + totalPages + '.html');
+            };
+        }
+    </script>
+</head>
+<body onload="setupNavigation(6, 16)"><!-- Adjust the current page number and total pages accordingly -->
+    <div class="container">
+        <div class="nav-bar">
+            <a id="firstPage" href="javascript:void(0);">首页</a>
+            <a id="prevPage" href="javascript:void(0);">上页</a>
+            <select id="pageSelect" onchange="goToPage()">
+			<option value="page6.html">第 6 页</option>
+                <option value="page1.html">第 1 页</option>
+                <option value="page2.html">第 2 页</option>
+                <option value="page3.html">第 3 页</option>
+                <option value="page4.html">第 4 页</option>
+                <option value="page5.html">第 5 页</option>
+                
+                <option value="page7.html">第 7 页</option>
+                <option value="page8.html">第 8 页</option>
+                <option value="page9.html">第 9 页</option>
+                <option value="page10.html">第 10 页</option>
+                <option value="page11.html">第 11 页</option>
+                <option value="page12.html">第 12 页</option>
+                <option value="page13.html">第 13 页</option>
+                <option value="page14.html">第 14 页</option>
+                <option value="page15.html">第 15 页</option>
+                <option value="page16.html">第 16 页</option>
+            </select>
+            <a id="nextPage" href="javascript:void(0);">下页</a>
+            <a id="lastPage" href="javascript:void(0);">尾页</a>
+        </div>
+        <!-- Page content goes here -->
+    </div>
+</body>
+</html>
