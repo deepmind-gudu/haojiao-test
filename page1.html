@@ -24,10 +24,12 @@
         .content {
             text-align: center;
             color: white;
-            font-size: 28px;
+            font-size: 2em; /* Use relative units */
             background-color: rgba(255, 0, 0, 0.8); /* Red background with opacity */
-            padding: 20px;
+            padding: 1em;
             width: 80%;
+            max-width: 600px; /* Add a max-width */
+            margin: auto; /* Center align */
         }
     </style>
 </head>
@@ -35,15 +37,15 @@
     <div class="background">
         <div class="content">
             <p>万胶之王 • 品质为王</p>
-			<p>THE KING OF ALL GUMS • QUALITY ABOVE ALL</p>
+            <p>THE KING OF ALL GUMS • QUALITY ABOVE ALL</p>
             <p>宜昌皓胶新材料科技有限公司</p>
-			<p>YICHANG HAOJIAO NEW MATERIAL TECHNOLOGY CO. LTD</p>
-			
+            <p>YICHANG HAOJIAO NEW MATERIAL TECHNOLOGY CO. LTD</p>
         </div>
     </div>
 </body>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Navigation</title>
     <style>
         body {
@@ -53,7 +55,8 @@
             background-color: #f8f8f8;
         }
         .container {
-            width: 80%;
+            width: 90%; /* Adjust width for better responsiveness */
+            max-width: 800px; /* Add max-width */
             margin: auto;
             background-color: #fff;
             padding: 20px;
@@ -64,7 +67,7 @@
             margin-bottom: 20px;
         }
         .nav-bar a, .nav-bar select {
-            margin: 0 5px;
+            margin: 5px; /* Adjust margin for better spacing */
             padding: 10px 20px;
             text-decoration: none;
             color: #fff;
